@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Калькулятор</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/print.css">
+		<link rel="stylesheet" href="css/calc.css">
+	</head>
+	<body>
+		<div class="section">
+			<div class="container bg-white">
+				<form class="calc js-calc">
+					<h2>Калькулятор</h2>
+					<div class="row row--gap">
+						<div class="col-5">
+							<input type="text" class="input js-input-x" placeholder="X" value="5">
+						</div>
+						<div class="col-2">
+							<select class="select js-operator">
+								<option value="plus">+</option>
+								<option value="minus">-</option>
+								<option value="multiple">*</option>
+								<option value="pow">**</option>
+								<option value="divine">/</option>
+							</select>
+						</div>
+						<div class="col-5">
+							<input type="text" class="input js-input-y" placeholder="Y" value="7">
+						</div>
+					</div>
+					<div class="row row--gap">
+						<div class="col-3">
+							<button type="submit" class="button button--full-width button--success">Calc</button>
+						</div>
+						<div class="col-3">
+							<button type="reset" class="button button--full-width button--danger">Reset</button>
+						</div>
+						<div class="col-6">
+							<input type="text" class="input js-input-result" readonly placeholder="Результат">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/calc.js"></script>
+	</body>
+</html>

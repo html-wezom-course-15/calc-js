@@ -1,0 +1,9 @@
+*.iml
+.idea/
+/nbproject/
+.npm/
+/node_modules/
+*.log*
+.DS_Store
+thumbs.db
+/.cache
